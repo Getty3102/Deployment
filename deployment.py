@@ -35,9 +35,11 @@ set_png_as_page_bg("C:/Users/User-PC/aws_demo/Alzheimer-s-Disease-Detection/What
 
 
 
+model_url = "https://drive.google.com/file/d/11dwGkJjypxYadfr34hGIBwbv8OiDtw98/view?usp=sharing"
+weights_url = "https://drive.google.com/file/d/1WB0PPbmCbXULX03nzwL22HTTc8_E0_OX/view?usp=sharing"
 @st.cache(allow_output_mutation=True)
 def load_model():
-    model = tf.keras.models.load_model("model.h5")
+    model = tf.keras.models.load_model(model_url)
     model.load_weights("weights.h5")
     return model
 
