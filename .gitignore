@@ -146,4 +146,4 @@ Thumbs.db
 config.py
 
 # h5 files
-.h5
+*.h5
