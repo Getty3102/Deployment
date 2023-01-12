@@ -40,7 +40,7 @@ weights_url = "https://drive.google.com/file/d/1WB0PPbmCbXULX03nzwL22HTTc8_E0_OX
 @st.cache(allow_output_mutation=True)
 def load_model():
     model = tf.keras.models.load_model(model_url)
-    model.load_weights("weights.h5")
+    model.load_weights(weights_url)
     return model
 
 with st.spinner('Model is being loaded..'):
